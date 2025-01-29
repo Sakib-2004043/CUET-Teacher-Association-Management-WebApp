@@ -9,6 +9,7 @@ const AdminComplaintsPage = () => {
   const [error, setError] = useState(null);
   const [replyText, setReplyText] = useState({}); // State to manage reply text for each complaint
 
+  
   // Fetch all complaints on component mount
   useEffect(() => {
     const fetchComplaints = async () => {
