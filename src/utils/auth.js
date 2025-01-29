@@ -21,6 +21,9 @@ export const checkToken = async (router) => {
       return false;
     }
 
+
+    
+
     // Call the backend API to further validate the token
     const response = await fetch("/api/auth", {
       method: "POST",
