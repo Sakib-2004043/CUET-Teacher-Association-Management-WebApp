@@ -94,6 +94,7 @@ const TeachersList = () => {
             <tr>
               <th>Profile</th>
               <th>Name</th>
+              
               <th>Email</th>
               <th>Department</th>
               <th>Mobile</th>
