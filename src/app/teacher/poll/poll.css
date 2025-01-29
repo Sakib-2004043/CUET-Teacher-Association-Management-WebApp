@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* poll.css */
 
 /* Root Theme */
@@ -166,3 +167,173 @@
 .teacher-poll-list::-webkit-scrollbar-thumb:hover {
   background: var(--hover-green);
 }
+=======
+/* poll.css */
+
+/* Root Theme */
+:root {
+  --primary-green: #d4edda;
+  --secondary-green: #c3e6cb;
+  --hover-green: #a5d6a7;
+  --text-dark: #155724;
+  --text-light: #4b734d;
+  --border-green: #8bc34a;
+  --button-hover: #81c784;
+  --button-active: #66bb6a;
+}
+
+/* Page Container */
+.teacher-poll-page-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--primary-green);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Title */
+.teacher-poll-page-title {
+  color: var(--text-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.teacher-poll-subtitle {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Poll List */
+.teacher-poll-list {
+  list-style: none;
+  padding: 0;
+  max-height: 400px; /* Makes the poll div scrollable */
+  overflow-y: auto;
+}
+
+/* Individual Poll Item */
+.teacher-poll-item {
+  background: var(--secondary-green);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.teacher-poll-item:hover {
+  background: var(--hover-green);
+  transform: scale(1.02);
+}
+
+/* Poll Text */
+.teacher-poll-title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+}
+
+.teacher-poll-description {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.teacher-poll-deadline {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+/* Poll Status */
+.teacher-poll-status {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.teacher-poll-status-open {
+  color: #2e7d32;
+  background: #e8f5e9;
+}
+
+.teacher-poll-status-closed {
+  color: #b71c1c;
+  background: #ffebee;
+}
+
+/* Voting Section */
+.teacher-poll-vote-section {
+  margin-top: 12px;
+}
+
+.teacher-poll-voted-message {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+/* Voting Buttons */
+.teacher-poll-vote-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.teacher-poll-agree-button,
+.teacher-poll-disagree-button {
+  background: var(--border-green);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.teacher-poll-agree-button:hover,
+.teacher-poll-disagree-button:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+.teacher-poll-agree-button:active,
+.teacher-poll-disagree-button:active {
+  background: var(--button-active);
+  transform: scale(1);
+}
+
+/* No Polls Available */
+.teacher-poll-empty {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Scrollbar Customization */
+.teacher-poll-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.teacher-poll-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.teacher-poll-list::-webkit-scrollbar-thumb {
+  background: var(--border-green);
+  border-radius: 5px;
+}
+
+.teacher-poll-list::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-green);
+}
+>>>>>>> df74fd4d1c57a495a9008abda6f08dd1b30a0847
