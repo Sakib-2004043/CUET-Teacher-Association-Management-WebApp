@@ -112,6 +112,8 @@ const TeachersList = () => {
                       height={50} // Image height
                       className="teacher-profile-img"
                     />
+
+                
                   ) : (
                     <div className="teacher-profile-placeholder">No Image</div>
                   )}
